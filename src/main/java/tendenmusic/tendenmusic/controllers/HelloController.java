@@ -1,4 +1,4 @@
-package tendenmusic.tendenmusic;
+package tendenmusic.tendenmusic.controllers;
 
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;

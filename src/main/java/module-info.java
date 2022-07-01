@@ -6,4 +6,6 @@ module tendenmusic.tendenmusic {
 
     opens tendenmusic.tendenmusic to javafx.fxml;
     exports tendenmusic.tendenmusic;
+    exports tendenmusic.tendenmusic.controllers;
+    opens tendenmusic.tendenmusic.controllers to javafx.fxml;
 }
