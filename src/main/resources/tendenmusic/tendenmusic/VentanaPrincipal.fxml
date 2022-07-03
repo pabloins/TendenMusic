@@ -1,17 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.paint.*?>
-<?import javafx.scene.text.*?>
-<?import com.cathive.fonts.fontawesome.*?>
-<?import javafx.geometry.*?>
 <?import java.lang.*?>
+<?import javafx.geometry.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.image.*?>
 <?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="662.0" prefWidth="1078.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
    <children>
-      <VBox prefHeight="662.0" prefWidth="294.0" style="-fx-background-color: #00ACC2;">
+      <VBox prefHeight="662.0" prefWidth="294.0" style="-fx-background-color: #0088c2;">
          <children>
             <Pane prefHeight="162.0" prefWidth="294.0">
                <children>
@@ -27,28 +25,31 @@
                   </Text>
                </children>
             </Pane>
-            <Button alignment="BASELINE_LEFT" mnemonicParsing="false" prefHeight="102.0" prefWidth="294.0" style="-fx-background-color: #00ACC2;" text="Búsqueda" textAlignment="JUSTIFY">
+            <Button alignment="BASELINE_LEFT" graphicTextGap="10.0" mnemonicParsing="false" prefHeight="102.0" prefWidth="294.0" style="-fx-background-color: #0088c2;" text="Generar Reporte" textAlignment="JUSTIFY">
                <graphic>
                   <ImageView fitHeight="57.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@busqueda.png" />
+                        <Image url="@pngwing.com.png" />
                      </image>
                   </ImageView>
                </graphic>
                <padding>
-                  <Insets left="50.0" />
+                  <Insets left="40.0" />
                </padding>
                <VBox.margin>
                   <Insets />
                </VBox.margin>
                <opaqueInsets>
                   <Insets />
-               </opaqueInsets></Button>
-            <Button alignment="BASELINE_LEFT" mnemonicParsing="false" prefHeight="102.0" prefWidth="294.0" style="-fx-background-color: #00ACC2;" text="Búsqueda" textAlignment="JUSTIFY">
+               </opaqueInsets>
+               <font>
+                  <Font size="18.0" />
+               </font></Button>
+            <Button alignment="BASELINE_LEFT" graphicTextGap="10.0" mnemonicParsing="false" prefHeight="102.0" prefWidth="294.0" style="-fx-background-color: #0088c2;" text="Generar Reporte con Filtro" textAlignment="JUSTIFY">
                <graphic>
                   <ImageView fitHeight="57.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@busqueda.png" />
+                        <Image url="@pngwing.com.png" />
                      </image>
                   </ImageView>
                </graphic>
@@ -56,14 +57,17 @@
                   <Insets />
                </opaqueInsets>
                <padding>
-                  <Insets left="50.0" />
+                  <Insets left="40.0" />
                </padding>
+               <font>
+                  <Font size="16.0" />
+               </font>
             </Button>
-            <Button alignment="BASELINE_LEFT" mnemonicParsing="false" prefHeight="102.0" prefWidth="294.0" style="-fx-background-color: #00ACC2;" text="Búsqueda" textAlignment="JUSTIFY">
+            <Button alignment="BASELINE_LEFT" graphicTextGap="10.0" mnemonicParsing="false" prefHeight="102.0" prefWidth="294.0" style="-fx-background-color: #0088c2;" text="Contacto" textAlignment="JUSTIFY">
                <graphic>
                   <ImageView fitHeight="57.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@busqueda.png" />
+                        <Image url="@correo.png" />
                      </image>
                   </ImageView>
                </graphic>
@@ -71,24 +75,65 @@
                   <Insets />
                </opaqueInsets>
                <padding>
-                  <Insets left="50.0" />
+                  <Insets left="40.0" />
                </padding>
+               <font>
+                  <Font size="18.0" />
+               </font>
             </Button>
-            <Button alignment="BASELINE_LEFT" mnemonicParsing="false" prefHeight="102.0" prefWidth="294.0" style="-fx-background-color: #00ACC2;" text="Búsqueda" textAlignment="JUSTIFY">
-               <graphic>
-                  <ImageView fitHeight="57.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true">
+            <Pane prefHeight="200.0" prefWidth="200.0">
+               <children>
+                  <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="47.0" layoutY="69.0" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@busqueda.png" />
-                     </image>
-                  </ImageView>
-               </graphic>
-               <opaqueInsets>
-                  <Insets />
-               </opaqueInsets>
-               <padding>
-                  <Insets left="50.0" />
-               </padding>
-            </Button>
+                        <Image url="@Spotify_logo_with_text.svg.png" />
+                     </image></ImageView>
+               </children>
+            </Pane>
          </children></VBox>
+      <VBox layoutX="560.0" layoutY="78.0" prefHeight="20.0" prefWidth="246.0" />
+      <Pane layoutX="560.0" layoutY="29.0" prefHeight="138.0" prefWidth="246.0">
+         <children>
+            <Text layoutX="75.0" layoutY="95.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Contacto">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Text>
+         </children>
+      </Pane>
+      <HBox layoutX="349.0" layoutY="367.0" prefHeight="32.0" prefWidth="280.0" />
+      <Text layoutX="310.0" layoutY="173.0" strokeType="OUTSIDE" strokeWidth="0.0" text="La comuniación con el equipo de desarrollo se puede hacer metiante correo a tavés de las sieguientes direciones:" />
+      <Pane layoutX="357.0" layoutY="221.0" prefHeight="364.0" prefWidth="670.0">
+         <children>
+            <ImageView fitHeight="101.0" fitWidth="154.0" layoutX="14.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@correo.png" />
+               </image>
+            </ImageView>
+            <Text layoutX="143.0" layoutY="56.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Camilo Godoy:  c.godoy09@ufromail.cl">
+               <font>
+                  <Font size="24.0" />
+               </font></Text>
+            <ImageView fitHeight="101.0" fitWidth="154.0" layoutX="14.0" layoutY="132.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@correo.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="101.0" fitWidth="154.0" layoutX="14.0" layoutY="263.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@correo.png" />
+               </image>
+            </ImageView>
+            <Text layoutX="143.0" layoutY="191.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Diego Vera:  d.vera08@ufromail.cl">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Text>
+            <Text layoutX="143.0" layoutY="323.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Pablo Nahuelpán:  p.nahuelpan02@ufromail.cl">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Text>
+         </children>
+      </Pane>
    </children>
 </AnchorPane>

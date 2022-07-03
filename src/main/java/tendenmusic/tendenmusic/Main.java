@@ -5,6 +5,7 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.scene.image.Image;
 import javafx.stage.Stage;
+import javafx.stage.StageStyle;
 
 import java.io.IOException;
 
@@ -16,6 +17,7 @@ public class Main extends Application {
         stage.setTitle("TendenMusic");
         Image icono = new Image(String.valueOf(Main.class.getResource("icono.png")));
 
+        //stage.initStyle(StageStyle.UNDECORATED);
         stage.getIcons().add(icono);
         stage.setScene(scene);
         stage.show();
