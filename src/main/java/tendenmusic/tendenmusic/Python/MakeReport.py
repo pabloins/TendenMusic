@@ -2,6 +2,7 @@ from operator import contains, ge
 from turtle import pd
 from typing_extensions import Self
 from fpdf import FPDF
+from matplotlib import artist
 import pandas as pd
 import glob
 import matplotlib.pyplot as plt
@@ -11,8 +12,9 @@ import MakeGraphs
 
 get_data = ApiSpotifyGetData
 get_data.get_data_playlist_to_CSV(Self,'37i9dQZEVXbL0GavIqMTeb')
+artists_ids = "768O5GliF0bqscyghggrbE,4yxLYO2imECxGYTTV7RQKb,2LRoIwlKmHjgvigdNGBHNo,7rOlQwf8OuFLFQp4aydjBt,3EiLUeyEcA6fbRPSHkG5kb,4q3ewBCX7sLwd24euuV69X,37230BxxYs9ksS7OkZw3IU,0Yg29FX1M4ayqjXs0ttZFq,5n9bMYfz9qss2VOW89EVs2,790FomKkXshlbRYZFtlgla,0EmeFodog0BfCgMzAIvKQp"
 get_data.get_data_album_to_CSV(Self,'3RQQmkQEvNCY4prGKE6oc5')
-get_data.get_data_artist_to_CSV(Self,'4q3ewBCX7sLwd24euuV69X')
+get_data.get_data_artist_to_CSV(Self,artists_ids)
 
 graphing = MakeGraphs
 graphing.graphAlbumData()
@@ -96,14 +98,14 @@ pdf.set_author('UFRO')
 
 pdf.print_chapter(1, 'Tendencia', 'A continuación se muestraran los graficos generados por el sistema con datos obtenidos de la API Spotify.')
 pdf.chapter_title(2,'Graficos')
-pdf.image('DataDir\graphs\SongData.png', x=10,y=60,w=200,h=130)
-pdf.image('DataDir\graphs\AlbumData.png', x=20,y=190,w=160,h=90)
+pdf.image('C:/Users/Diego/OneDrive/Escritorio/ProyectoTendenMusic/Java/TendenMusic/src/main/java/tendenmusic/tendenmusic/Python/DataDir/SongData.png', x=10,y=60,w=200,h=130)
+pdf.image('C:/Users/Diego/OneDrive/Escritorio/ProyectoTendenMusic/Java/TendenMusic/src/main/java/tendenmusic/tendenmusic/Python/DataDir/AlbumData.png', x=20,y=190,w=160,h=90)
 pdf.add_page()
 
-pdf.image('DataDir\graphs\ArtistPopularity.png', x=20,y=20,w=160,h=90)
-pdf.image('DataDir\graphs\ArtistFollowers.png', x=10,y=120,w=190,h=90)
+pdf.image('C:/Users/Diego/OneDrive/Escritorio/ProyectoTendenMusic/Java/TendenMusic/src/main/java/tendenmusic/tendenmusic/Python/DataDir/ArtistPopularity.png', x=20,y=20,w=160,h=90)
+pdf.image('C:/Users/Diego/OneDrive/Escritorio/ProyectoTendenMusic/Java/TendenMusic/src/main/java/tendenmusic/tendenmusic/Python/DataDir/ArtistFollowers.png', x=10,y=120,w=190,h=90)
 pdf.add_page()
 
-pdf.image('DataDir\graphs\densityPopularityFollowing.png', x=20,y=20,w=160,h=160)
+pdf.image('C:/Users/Diego/OneDrive/Escritorio/ProyectoTendenMusic/Java/TendenMusic/src/main/java/tendenmusic/tendenmusic/Python/DataDir/densityPopularityFollowing.png', x=20,y=20,w=160,h=160)
 
-pdf.output('Reporte.pdf', 'F')
+pdf.output('C:/Users/Diego/OneDrive/Escritorio/ProyectoTendenMusic/Java/TendenMusic/src/main/java/tendenmusic/tendenmusic/Python/Reporte.pdf', 'F')

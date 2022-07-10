@@ -8,7 +8,7 @@ todaysDate = now.strftime("%d-%m-%y")
 
 def export():
 
-    path = "DataDir"
+    path = "C:/Users/Diego/OneDrive/Escritorio/ProyectoTendenMusic/Java/TendenMusic/src/main/java/tendenmusic/tendenmusic/Python/DataDir"
     filesCSV = glob.glob(path + "/*.CSV")
     extension = todaysDate+'.xlsx'
 

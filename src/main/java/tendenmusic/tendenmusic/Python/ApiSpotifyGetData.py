@@ -193,7 +193,7 @@ def get_data_album_to_CSV(self, _id):
         
 
     final_data = list(zip(songId_list,album_list,artists_list,song_name_list,popularity_list))
-    TituloCSV = "DataDir/AlbumData.CSV"
+    TituloCSV = "C:/Users/Diego/OneDrive/Escritorio/ProyectoTendenMusic/Java/TendenMusic/src/main/java/tendenmusic/tendenmusic/Python/DataDir/AlbumData.CSV"
     Details = ["ID","Album","Artista","Cancion","Popularidad"]
     rows = final_data
     with open(TituloCSV,'w', newline='',encoding='utf-8') as f:
@@ -231,7 +231,7 @@ def get_data_playlist_to_CSV(self, _id):
         id_list.append(i)
 
     final_data = list(zip(id_list,song_list,popularity_list,artists_list,album_list))
-    TituloCSV = "DataDir/SongData.CSV"
+    TituloCSV = "C:/Users/Diego/OneDrive/Escritorio/ProyectoTendenMusic/Java/TendenMusic/src/main/java/tendenmusic/tendenmusic/Python/DataDir/SongData.CSV"
     Details = ["ID","Cancion","Popularidad","Artistas","Album"]
     rows = final_data
     with open(TituloCSV,'w', newline='',encoding='utf-8') as f:
@@ -244,8 +244,8 @@ def get_data_playlist_to_CSV(self, _id):
 
 
 def get_data_artist_to_CSV(self, _id):
-    artists_ids = "768O5GliF0bqscyghggrbE,4yxLYO2imECxGYTTV7RQKb,2LRoIwlKmHjgvigdNGBHNo,7rOlQwf8OuFLFQp4aydjBt,3EiLUeyEcA6fbRPSHkG5kb,4q3ewBCX7sLwd24euuV69X,37230BxxYs9ksS7OkZw3IU,0Yg29FX1M4ayqjXs0ttZFq,5n9bMYfz9qss2VOW89EVs2,790FomKkXshlbRYZFtlgla,0EmeFodog0BfCgMzAIvKQp"
-    artist_data = spotify.get_artist(artists_ids)
+    # artists_ids = "768O5GliF0bqscyghggrbE,4yxLYO2imECxGYTTV7RQKb,2LRoIwlKmHjgvigdNGBHNo,7rOlQwf8OuFLFQp4aydjBt,3EiLUeyEcA6fbRPSHkG5kb,4q3ewBCX7sLwd24euuV69X,37230BxxYs9ksS7OkZw3IU,0Yg29FX1M4ayqjXs0ttZFq,5n9bMYfz9qss2VOW89EVs2,790FomKkXshlbRYZFtlgla,0EmeFodog0BfCgMzAIvKQp"
+    artist_data = spotify.get_artist(_id)
 
     id_list = []
     name_list = []
@@ -268,7 +268,7 @@ def get_data_artist_to_CSV(self, _id):
         id_list.append(i)
 
         final_data = list(zip(id_list,name_list,genres_list,followers_list,popularity_list))
-        TituloCSV = "DataDir/ArtistData.CSV"
+        TituloCSV = "C:/Users/Diego/OneDrive/Escritorio/ProyectoTendenMusic/Java/TendenMusic/src/main/java/tendenmusic/tendenmusic/Python/DataDir/ArtistData.CSV"
         Details = ["ID","NombreArtista","Generos","Followers","Popularidad"]
         rows = final_data
         with open(TituloCSV,'w', newline='',encoding='utf-8') as f:

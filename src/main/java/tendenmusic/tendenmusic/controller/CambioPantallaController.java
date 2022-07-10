@@ -22,8 +22,6 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.net.URL;
 import java.util.ResourceBundle;
-import org.python.core.PyInstance;
-import org.python.util.PythonInterpreter;
 
 public class CambioPantallaController implements Initializable {
 
@@ -56,7 +54,7 @@ public class CambioPantallaController implements Initializable {
 
     }
     @FXML
-    private void handleClicks(ActionEvent event) throws IOException {
+    private void handleClicks(ActionEvent event) throws IOException, InterruptedException {
         if(event.getSource() == btnGenerarReporte){
             panTitulo.setText("Generar Reporte");
             loadStage("VentanaGenerarReporte.fxml");
@@ -86,11 +84,11 @@ public class CambioPantallaController implements Initializable {
 
     }
 
-    private void generarReportePdf() throws IOException {
-        PythonInterpreter interpreter = new PythonInterpreter();
-        interpreter.execfile("E:\\workspace\\pycharm_workspace\\weixincrawer\\test.py");
-        PyFunction function = (PyFunction)interpreter.get("my_test",PyFunction.class);
-        PyObject pyobject = function.__call__(new PyString("huzhiwei"),new PyString("25"));
-        System.out.println("anwser = " + pyobject.toString());
+    private void generarReportePdf() throws IOException, InterruptedException {
+        String dirScript = "C://Users/Diego/OneDrive/Escritorio/ProyectoTendenMusic/Java/TendenMusic/src/main/java/tendenmusic/tendenmusic/Python/ScriptPythonReport.bat";
+        Runtime.
+                getRuntime().
+                exec("cmd /c start "+dirScript);
+        System.out.println("TestScript");
     }
 }
