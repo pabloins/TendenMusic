@@ -102,20 +102,27 @@
       <HBox layoutX="349.0" layoutY="367.0" prefHeight="32.0" prefWidth="280.0" />
       <Pane fx:id="paneGenerar" layoutX="357.0" layoutY="161.0" prefHeight="462.0" prefWidth="670.0">
          <children>
-            <ImageView fitHeight="240.0" fitWidth="222.0" layoutX="60.0" layoutY="84.0" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="@pdf.png" />
-               </image>
-            </ImageView>
-            <ImageView fitHeight="222.0" fitWidth="243.0" layoutX="411.0" layoutY="84.0" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="@planilla.png" />
-               </image>
-            </ImageView>
             <Text layoutX="187.0" layoutY="33.0" strokeType="OUTSIDE" strokeWidth="0.0" text="¿En que formato necesita su reporte?">
                <font>
                   <Font size="18.0" />
                </font></Text>
+            <Button fx:id="btnPDF" layoutX="42.0" layoutY="90.0" mnemonicParsing="false">
+               <graphic>
+                  <ImageView fitHeight="240.0" fitWidth="222.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@pdf.png" />
+                     </image>
+                  </ImageView>
+               </graphic></Button>
+            <Button fx:id="btnPlantilla" layoutX="361.0" layoutY="99.0" mnemonicParsing="false">
+               <graphic>
+                  <ImageView fitHeight="222.0" fitWidth="243.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@planilla.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
          </children></Pane>
    </children>
 </AnchorPane>

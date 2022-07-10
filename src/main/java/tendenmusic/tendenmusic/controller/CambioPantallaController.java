@@ -11,6 +11,7 @@ import javafx.scene.Scene;
 import javafx.scene.control.Button;
 
 import javafx.scene.image.Image;
+import javafx.scene.image.ImageView;
 import javafx.scene.layout.Pane;
 import javafx.scene.text.Text;
 import javafx.stage.Modality;
@@ -28,13 +29,25 @@ public class CambioPantallaController implements Initializable {
     private Text panTitulo;
 
     @FXML
+    private Pane paneGenerar;
+
+    @FXML
     private Button btnGenerarReporte;
+
+    @FXML
+    private Button btnPDF;
 
     @FXML
     private Button btnContacto;
 
     @FXML
     private Button btnGenerarReporteConFiltro;
+
+    @FXML
+    private Pane panStatus;
+
+    @FXML
+    private Button btnPlantilla;
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
@@ -50,7 +63,9 @@ public class CambioPantallaController implements Initializable {
             loadStage("VentanaGenerarReporteFiltro.fxml");
         } else if (event.getSource() == btnContacto) {
             panTitulo.setText("Contacto");
-
+            loadStage("Main.fxml");
+        } else if (event.getSource() == btnPDF) {
+            
         }
     }
 
