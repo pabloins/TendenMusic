@@ -106,7 +106,7 @@
                <font>
                   <Font size="18.0" />
                </font></Text>
-            <Button fx:id="btnPDF" layoutX="42.0" layoutY="90.0" mnemonicParsing="false">
+            <Button fx:id="btnPDF" layoutX="42.0" layoutY="90.0" mnemonicParsing="false" onAction="#handleClicks">
                <graphic>
                   <ImageView fitHeight="240.0" fitWidth="222.0" pickOnBounds="true" preserveRatio="true">
                      <image>

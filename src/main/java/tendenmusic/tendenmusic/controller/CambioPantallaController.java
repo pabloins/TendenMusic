@@ -11,17 +11,19 @@ import javafx.scene.Scene;
 import javafx.scene.control.Button;
 
 import javafx.scene.image.Image;
-import javafx.scene.image.ImageView;
 import javafx.scene.layout.Pane;
 import javafx.scene.text.Text;
 import javafx.stage.Modality;
 import javafx.stage.Stage;
 import tendenmusic.tendenmusic.Main;
 
+import java.io.BufferedReader;
 import java.io.IOException;
+import java.io.InputStreamReader;
 import java.net.URL;
-import java.util.HashMap;
 import java.util.ResourceBundle;
+import org.python.core.PyInstance;
+import org.python.util.PythonInterpreter;
 
 public class CambioPantallaController implements Initializable {
 
@@ -65,7 +67,7 @@ public class CambioPantallaController implements Initializable {
             panTitulo.setText("Contacto");
             loadStage("Main.fxml");
         } else if (event.getSource() == btnPDF) {
-            
+            generarReportePdf();
         }
     }
 
@@ -84,4 +86,11 @@ public class CambioPantallaController implements Initializable {
 
     }
 
+    private void generarReportePdf() throws IOException {
+        PythonInterpreter interpreter = new PythonInterpreter();
+        interpreter.execfile("E:\\workspace\\pycharm_workspace\\weixincrawer\\test.py");
+        PyFunction function = (PyFunction)interpreter.get("my_test",PyFunction.class);
+        PyObject pyobject = function.__call__(new PyString("huzhiwei"),new PyString("25"));
+        System.out.println("anwser = " + pyobject.toString());
+    }
 }

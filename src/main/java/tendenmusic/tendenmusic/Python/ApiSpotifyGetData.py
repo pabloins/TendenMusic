@@ -196,7 +196,7 @@ def get_data_album_to_CSV(self, _id):
     TituloCSV = "DataDir/AlbumData.CSV"
     Details = ["ID","Album","Artista","Cancion","Popularidad"]
     rows = final_data
-    with open(TituloCSV,'w', newline='') as f:
+    with open(TituloCSV,'w', newline='',encoding='utf-8') as f:
         write = csv.writer(f)
         write.writerow(Details)
         write.writerows(rows)
@@ -234,7 +234,7 @@ def get_data_playlist_to_CSV(self, _id):
     TituloCSV = "DataDir/SongData.CSV"
     Details = ["ID","Cancion","Popularidad","Artistas","Album"]
     rows = final_data
-    with open(TituloCSV,'w', newline='') as f:
+    with open(TituloCSV,'w', newline='',encoding='utf-8') as f:
         write = csv.writer(f)
         write.writerow(Details)
         write.writerows(rows)
@@ -271,7 +271,7 @@ def get_data_artist_to_CSV(self, _id):
         TituloCSV = "DataDir/ArtistData.CSV"
         Details = ["ID","NombreArtista","Generos","Followers","Popularidad"]
         rows = final_data
-        with open(TituloCSV,'w', newline='') as f:
+        with open(TituloCSV,'w', newline='',encoding='utf-8') as f:
             write = csv.writer(f)
             write.writerow(Details)
             write.writerows(rows)

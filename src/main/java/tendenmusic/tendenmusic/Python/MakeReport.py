@@ -1,4 +1,4 @@
-from operator import contains
+from operator import contains, ge
 from turtle import pd
 from typing_extensions import Self
 from fpdf import FPDF
@@ -6,7 +6,18 @@ import pandas as pd
 import glob
 import matplotlib.pyplot as plt
 import seaborn as sns
+import ApiSpotifyGetData
+import MakeGraphs
 
+get_data = ApiSpotifyGetData
+get_data.get_data_playlist_to_CSV(Self,'37i9dQZEVXbL0GavIqMTeb')
+get_data.get_data_album_to_CSV(Self,'3RQQmkQEvNCY4prGKE6oc5')
+get_data.get_data_artist_to_CSV(Self,'4q3ewBCX7sLwd24euuV69X')
+
+graphing = MakeGraphs
+graphing.graphAlbumData()
+graphing.graphArtistData()
+graphing.graphSongData()
 
 title = 'Reporte TendenMusic'
 
@@ -85,8 +96,8 @@ pdf.set_author('UFRO')
 
 pdf.print_chapter(1, 'Tendencia', 'A continuación se muestraran los graficos generados por el sistema con datos obtenidos de la API Spotify.')
 pdf.chapter_title(2,'Graficos')
-pdf.image('DataDir\graphs\SongData.png', x=20,y=60,w=160,h=90)
-pdf.image('DataDir\graphs\AlbumData.png', x=20,y=160,w=160,h=90)
+pdf.image('DataDir\graphs\SongData.png', x=10,y=60,w=200,h=130)
+pdf.image('DataDir\graphs\AlbumData.png', x=20,y=190,w=160,h=90)
 pdf.add_page()
 
 pdf.image('DataDir\graphs\ArtistPopularity.png', x=20,y=20,w=160,h=90)
