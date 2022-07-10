@@ -15,7 +15,7 @@
                <children>
                   <ImageView fitHeight="108.0" fitWidth="154.0" layoutY="41.0" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@icono.png" />
+                        <Image url="@../icons/icono.png" />
                      </image>
                   </ImageView>
                   <Text layoutX="163.0" layoutY="101.0" strokeType="OUTSIDE" strokeWidth="0.0" text="TendenMusic">
@@ -29,7 +29,7 @@
                <graphic>
                   <ImageView fitHeight="57.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@pngwing.com.png" />
+                        <Image url="@../icons/pngwing.com.png" />
                      </image>
                   </ImageView>
                </graphic>
@@ -49,7 +49,7 @@
                <graphic>
                   <ImageView fitHeight="57.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@pngwing.com.png" />
+                        <Image url="@../icons/pngwing.com.png" />
                      </image>
                   </ImageView>
                </graphic>
@@ -67,7 +67,7 @@
                <graphic>
                   <ImageView fitHeight="57.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@correo.png" />
+                        <Image url="@../icons/correo.png" />
                      </image>
                   </ImageView>
                </graphic>
@@ -85,7 +85,7 @@
                <children>
                   <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="47.0" layoutY="69.0" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@Spotify_logo_with_text.svg.png" />
+                        <Image url="@../icons/Spotify_logo_with_text.svg.png" />
                      </image></ImageView>
                </children>
             </Pane>
@@ -105,7 +105,7 @@
          <children>
             <ImageView fitHeight="101.0" fitWidth="154.0" layoutX="14.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@correo.png" />
+                  <Image url="@../icons/correo.png" />
                </image>
             </ImageView>
             <Text layoutX="143.0" layoutY="56.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Camilo Godoy:  c.godoy09@ufromail.cl">
@@ -114,12 +114,12 @@
                </font></Text>
             <ImageView fitHeight="101.0" fitWidth="154.0" layoutX="14.0" layoutY="132.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@correo.png" />
+                  <Image url="@../icons/correo.png" />
                </image>
             </ImageView>
             <ImageView fitHeight="101.0" fitWidth="154.0" layoutX="14.0" layoutY="263.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@correo.png" />
+                  <Image url="@../icons/correo.png" />
                </image>
             </ImageView>
             <Text layoutX="143.0" layoutY="191.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Diego Vera:  d.vera08@ufromail.cl">

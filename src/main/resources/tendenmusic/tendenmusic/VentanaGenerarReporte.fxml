@@ -25,7 +25,7 @@
                   </Text>
                </children>
             </Pane>
-            <Button fx:id="btnGenerarReporte" alignment="BASELINE_LEFT" graphicTextGap="10.0" mnemonicParsing="false" onAction="#handleClicks" prefHeight="102.0" prefWidth="294.0" style="-fx-background-color: #0088c2;" text="Generar Reporte" textAlignment="JUSTIFY">
+            <Button fx:id="btnGenerarReporte" alignment="BASELINE_LEFT" graphicTextGap="10.0" mnemonicParsing="false" onAction="#handleClicks" prefHeight="102.0" prefWidth="294.0" style="-fx-background-color: #0082B9;" text="Generar Reporte" textAlignment="JUSTIFY">
                <graphic>
                   <ImageView fitHeight="57.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true">
                      <image>
@@ -92,7 +92,7 @@
          </children></VBox>
       <Pane fx:id="panStatus" layoutX="294.0" layoutY="32.0" prefHeight="101.0" prefWidth="785.0" style="-fx-background-color: #D6DF22;">
          <children>
-            <Text fx:id="panTitulo" layoutX="35.0" layoutY="60.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Contacto" wrappingWidth="715.12890625">
+            <Text fx:id="panTitulo" layoutX="35.0" layoutY="60.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Generar Reporte" wrappingWidth="715.12890625">
                <font>
                   <Font size="24.0" />
                </font>
@@ -100,39 +100,22 @@
          </children>
       </Pane>
       <HBox layoutX="349.0" layoutY="367.0" prefHeight="32.0" prefWidth="280.0" />
-      <Text layoutX="310.0" layoutY="173.0" strokeType="OUTSIDE" strokeWidth="0.0" text="La comuniación con el equipo de desarrollo se puede hacer metiante correo a tavés de las sieguientes direciones:" />
-      <Pane layoutX="357.0" layoutY="221.0" prefHeight="364.0" prefWidth="670.0">
+      <Pane fx:id="paneGenerar" layoutX="357.0" layoutY="161.0" prefHeight="462.0" prefWidth="670.0">
          <children>
-            <ImageView fitHeight="101.0" fitWidth="154.0" layoutX="14.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="240.0" fitWidth="222.0" layoutX="60.0" layoutY="84.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@correo.png" />
+                  <Image url="@pdf.png" />
                </image>
             </ImageView>
-            <Text layoutX="143.0" layoutY="56.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Camilo Godoy:  c.godoy09@ufromail.cl">
+            <ImageView fitHeight="222.0" fitWidth="243.0" layoutX="411.0" layoutY="84.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@planilla.png" />
+               </image>
+            </ImageView>
+            <Text layoutX="187.0" layoutY="33.0" strokeType="OUTSIDE" strokeWidth="0.0" text="¿En que formato necesita su reporte?">
                <font>
-                  <Font size="24.0" />
+                  <Font size="18.0" />
                </font></Text>
-            <ImageView fitHeight="101.0" fitWidth="154.0" layoutX="14.0" layoutY="132.0" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="@correo.png" />
-               </image>
-            </ImageView>
-            <ImageView fitHeight="101.0" fitWidth="154.0" layoutX="14.0" layoutY="263.0" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="@correo.png" />
-               </image>
-            </ImageView>
-            <Text layoutX="143.0" layoutY="191.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Diego Vera:  d.vera08@ufromail.cl">
-               <font>
-                  <Font size="24.0" />
-               </font>
-            </Text>
-            <Text layoutX="143.0" layoutY="323.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Pablo Nahuelpán:  p.nahuelpan02@ufromail.cl">
-               <font>
-                  <Font size="24.0" />
-               </font>
-            </Text>
-         </children>
-      </Pane>
+         </children></Pane>
    </children>
 </AnchorPane>
