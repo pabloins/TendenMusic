@@ -11,6 +11,7 @@ import javafx.scene.Scene;
 import javafx.scene.control.Button;
 
 import javafx.scene.image.Image;
+import javafx.scene.layout.Pane;
 import javafx.scene.text.Text;
 import javafx.stage.Modality;
 import javafx.stage.Stage;
@@ -18,6 +19,7 @@ import tendenmusic.tendenmusic.Main;
 
 import java.io.IOException;
 import java.net.URL;
+import java.util.HashMap;
 import java.util.ResourceBundle;
 
 public class CambioPantallaController implements Initializable {
@@ -58,7 +60,9 @@ public class CambioPantallaController implements Initializable {
         Parent root = loader.load();
 
         Stage stage = new Stage();
-
+        stage.setTitle("TendenMusic");
+        Image icono = new Image(String.valueOf(Main.class.getResource("icono.png")));
+        stage.getIcons().add(icono);
         stage.setScene(new Scene(root));
         stage.initModality(Modality.APPLICATION_MODAL);
         stage.show();

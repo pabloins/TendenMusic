@@ -25,7 +25,7 @@
                   </Text>
                </children>
             </Pane>
-            <Button fx:id="btnGenerarReporte" alignment="BASELINE_LEFT" graphicTextGap="10.0" mnemonicParsing="false" onAction="#handleClicks" prefHeight="102.0" prefWidth="294.0" style="-fx-background-color: #0082B9;" text="Generar Reporte" textAlignment="JUSTIFY">
+            <Button fx:id="btnGenerarReporte" alignment="BASELINE_LEFT" graphicTextGap="10.0" mnemonicParsing="false" onAction="#handleClicks" prefHeight="102.0" prefWidth="294.0" style="-fx-background-color: #0088C2;" text="Generar Reporte" textAlignment="JUSTIFY">
                <graphic>
                   <ImageView fitHeight="57.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true">
                      <image>
@@ -45,7 +45,7 @@
                <font>
                   <Font size="18.0" />
                </font></Button>
-            <Button fx:id="btnGenerarReporteConFiltro" alignment="BASELINE_LEFT" graphicTextGap="10.0" mnemonicParsing="false" onAction="#handleClicks" prefHeight="102.0" prefWidth="294.0" style="-fx-background-color: #0088c2;" text="Generar Reporte con Filtro" textAlignment="JUSTIFY">
+            <Button fx:id="btnGenerarReporteConFiltro" alignment="BASELINE_LEFT" graphicTextGap="10.0" mnemonicParsing="false" onAction="#handleClicks" prefHeight="102.0" prefWidth="294.0" style="-fx-background-color: #0082B9;" text="Generar Reporte con Filtro" textAlignment="JUSTIFY">
                <graphic>
                   <ImageView fitHeight="57.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true">
                      <image>
@@ -92,7 +92,7 @@
          </children></VBox>
       <Pane fx:id="panStatus" layoutX="294.0" layoutY="32.0" prefHeight="101.0" prefWidth="785.0" style="-fx-background-color: #D6DF22;">
          <children>
-            <Text fx:id="panTitulo" layoutX="35.0" layoutY="60.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Generar Reporte con Filtro" wrappingWidth="715.12890625">
+            <Text fx:id="panTitulo" layoutX="35.0" layoutY="60.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Reporte de tendencias con filtros" wrappingWidth="715.12890625">
                <font>
                   <Font size="24.0" />
                </font>
@@ -102,20 +102,29 @@
       <HBox layoutX="349.0" layoutY="367.0" prefHeight="32.0" prefWidth="280.0" />
       <Pane fx:id="paneGenerar" layoutX="357.0" layoutY="161.0" prefHeight="462.0" prefWidth="670.0">
          <children>
-            <ImageView fitHeight="240.0" fitWidth="222.0" layoutX="60.0" layoutY="84.0" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="@pdf.png" />
-               </image>
-            </ImageView>
-            <ImageView fitHeight="222.0" fitWidth="243.0" layoutX="411.0" layoutY="84.0" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="@planilla.png" />
-               </image>
-            </ImageView>
-            <Text layoutX="187.0" layoutY="33.0" strokeType="OUTSIDE" strokeWidth="0.0" text="¿En que formato necesita su reporte?">
+            <Text layoutX="40.0" layoutY="106.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Género Musical">
                <font>
                   <Font size="18.0" />
                </font></Text>
+            <TextField layoutX="281.0" layoutY="84.0" prefHeight="31.0" prefWidth="342.0" />
+            <Text layoutX="40.0" layoutY="187.0" strokeType="OUTSIDE" strokeWidth="0.0" text="País">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Text>
+            <TextField layoutX="281.0" layoutY="165.0" prefHeight="31.0" prefWidth="342.0" />
+            <Text layoutX="40.0" layoutY="271.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tipo de artista (Banda o Solista)">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Text>
+            <ComboBox layoutX="404.0" layoutY="248.0" prefWidth="150.0" promptText="Seleccionar..." />
+            <Text layoutX="40.0" layoutY="369.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Artista">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Text>
+            <TextField layoutX="281.0" layoutY="358.0" prefHeight="31.0" prefWidth="342.0" />
          </children></Pane>
    </children>
 </AnchorPane>

@@ -63,7 +63,7 @@
                   <Font size="16.0" />
                </font>
             </Button>
-            <Button fx:id="btnContacto" alignment="BASELINE_LEFT" graphicTextGap="10.0" mnemonicParsing="false" onAction="#handleClicks" prefHeight="102.0" prefWidth="294.0" style="-fx-background-color: #0088c2;" text="Contacto" textAlignment="JUSTIFY">
+            <Button fx:id="btnContacto" alignment="BASELINE_LEFT" graphicTextGap="10.0" mnemonicParsing="false" onAction="#handleClicks" prefHeight="102.0" prefWidth="294.0" style="-fx-background-color: #0082B9;" text="Contacto" textAlignment="JUSTIFY">
                <graphic>
                   <ImageView fitHeight="57.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true">
                      <image>
