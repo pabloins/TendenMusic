@@ -54,7 +54,7 @@ public class CambioPantallaController implements Initializable {
 
     }
     @FXML
-    private void handleClicks(ActionEvent event) throws IOException, InterruptedException {
+    private void handleClicks(ActionEvent event) throws IOException {
         if(event.getSource() == btnGenerarReporte){
             panTitulo.setText("Generar Reporte");
             loadStage("VentanaGenerarReporte.fxml");
@@ -66,6 +66,8 @@ public class CambioPantallaController implements Initializable {
             loadStage("Main.fxml");
         } else if (event.getSource() == btnPDF) {
             generarReportePdf();
+        } else if (event.getSource() == btnPlantilla) {
+            generarReportePlanilla();
         }
     }
 
@@ -84,11 +86,17 @@ public class CambioPantallaController implements Initializable {
 
     }
 
-    private void generarReportePdf() throws IOException, InterruptedException {
+    private void generarReportePdf() throws IOException {
         String dirScript = "C://Users/Diego/OneDrive/Escritorio/ProyectoTendenMusic/Java/TendenMusic/src/main/java/tendenmusic/tendenmusic/Python/ScriptPythonReport.bat";
         Runtime.
                 getRuntime().
                 exec("cmd /c start "+dirScript);
-        System.out.println("TestScript");
+    }
+
+    private void generarReportePlanilla() throws IOException {
+        String dirScript = "C://Users/Diego/OneDrive/Escritorio/ProyectoTendenMusic/Java/TendenMusic/src/main/java/tendenmusic/tendenmusic/Python/ScriptPythonExport.bat";
+        Runtime.
+                getRuntime().
+                exec("cmd /c start "+dirScript);
     }
 }

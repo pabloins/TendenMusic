@@ -114,7 +114,7 @@
                      </image>
                   </ImageView>
                </graphic></Button>
-            <Button fx:id="btnPlantilla" layoutX="361.0" layoutY="99.0" mnemonicParsing="false">
+            <Button fx:id="btnPlantilla" layoutX="361.0" layoutY="99.0" mnemonicParsing="false" onAction="#handleClicks">
                <graphic>
                   <ImageView fitHeight="222.0" fitWidth="243.0" pickOnBounds="true" preserveRatio="true">
                      <image>
