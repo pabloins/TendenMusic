@@ -6,6 +6,7 @@ import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 
+import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
@@ -58,12 +59,21 @@ public class CambioPantallaController implements Initializable {
         if(event.getSource() == btnGenerarReporte){
             panTitulo.setText("Generar Reporte");
             loadStage("VentanaGenerarReporte.fxml");
+            Node source= (Node) event.getSource();
+            Stage stage = (Stage) source.getScene().getWindow();
+            stage.close();
         } else if (event.getSource() == btnGenerarReporteConFiltro) {
             panTitulo.setText("Generar Reporte con Filtro");
             loadStage("VentanaGenerarReporteFiltro.fxml");
+            Node source= (Node) event.getSource();
+            Stage stage = (Stage) source.getScene().getWindow();
+            stage.close();
         } else if (event.getSource() == btnContacto) {
             panTitulo.setText("Contacto");
             loadStage("Main.fxml");
+            Node source= (Node) event.getSource();
+            Stage stage = (Stage) source.getScene().getWindow();
+            stage.close();
         } else if (event.getSource() == btnPDF) {
             generarReportePdf();
         } else if (event.getSource() == btnPlantilla) {
